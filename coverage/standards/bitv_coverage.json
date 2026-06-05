@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "standard": "bitv_3_0",
+  "status": "seed",
+  "pruefschritte": {
+    "1.1.1a": {
+      "axe_rules": [
+        "image-alt",
+        "input-image-alt",
+        "area-alt"
+      ],
+      "lighthouse_audits": [
+        "image-alt"
+      ],
+      "ibm_rules": [
+        "RPT_Img_UsemapAlt"
+      ],
+      "wcag_equivalent": "1.1.1"
+    },
+    "9.1.3.1a": {
+      "axe_rules": [
+        "heading-order"
+      ],
+      "lighthouse_audits": [
+        "heading-order"
+      ],
+      "ibm_rules": [
+        "heading_markup_misuse"
+      ],
+      "wcag_equivalent": "1.3.1"
+    },
+    "3.2.5c": {
+      "axe_rules": [],
+      "lighthouse_audits": [],
+      "ibm_rules": [],
+      "wcag_equivalent": "3.2.5",
+      "status": "MANUAL_ONLY"
+    }
+  }
+}

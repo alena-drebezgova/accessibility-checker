@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "latest": {
+    "wcag": "2.2",
+    "bitv": "3.0"
+  },
+  "paths": {
+    "wcag_2_1": "checklists/wcag/wcag_2_1.json",
+    "wcag_2_2": "checklists/wcag/wcag_2_2.json",
+    "bitv_3_0": "checklists/bitv/bitv_3_0.json"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "status": "seed",
+  "generated_at": "2026-06-05T16:57:14.237703+00:00",
+  "tool_versions": {
+    "axe_core": "4.11.4",
+    "lighthouse": "13.3.0",
+    "ibm_checker": "3.0.0"
+  },
+  "standards": {
+    "wcag_2_2": {
+      "1.1.1": {
+        "covered_by": [
+          "axe",
+          "lighthouse",
+          "ibm"
+        ],
+        "axe_rules": [
+          "image-alt"
+        ],
+        "lighthouse_audits": [
+          "image-alt"
+        ],
+        "ibm_rules": [
+          "RPT_Img_UsemapAlt"
+        ]
+      },
+      "1.3.1": {
+        "covered_by": [
+          "axe",
+          "lighthouse",
+          "ibm"
+        ],
+        "axe_rules": [
+          "heading-order"
+        ],
+        "lighthouse_audits": [
+          "heading-order"
+        ],
+        "ibm_rules": [
+          "heading_markup_misuse"
+        ]
+      },
+      "2.5.8": {
+        "covered_by": [
+          "axe"
+        ],
+        "axe_rules": [
+          "target-size"
+        ],
+        "lighthouse_audits": [],
+        "ibm_rules": [],
+        "status": "PARTIAL"
+      }
+    },
+    "bitv_3_0": {
+      "1.1.1a": {
+        "covered_by": [
+          "axe",
+          "lighthouse",
+          "ibm"
+        ]
+      },
+      "9.1.3.1a": {
+        "covered_by": [
+          "axe",
+          "lighthouse",
+          "ibm"
+        ]
+      },
+      "3.2.5c": {
+        "covered_by": [],
+        "status": "MANUAL_ONLY"
+      }
+    }
+  }
+}

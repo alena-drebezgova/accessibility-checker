@@ -1,0 +1,290 @@
+{
+    "schema_version": "1.0",
+    "generated_at": "2026-05-29",
+    "status": "draft-verified",
+    "version_dimensions": [
+        "tool_package_version",
+        "embedded_engine_version",
+        "runtime_version",
+        "web_ui_or_report_surface_version",
+        "python_wrapper_version",
+        "standards_checklist_version"
+    ],
+    "standards_checklists": {
+        "wcag_2_1": {
+            "version": "2.1",
+            "published": "2018-06-05",
+            "criteria_count": 78,
+            "levels": [
+                "A",
+                "AA",
+                "AAA"
+            ],
+            "source_url": "https://www.w3.org/TR/WCAG21/",
+            "checklist_file": "checklists/wcag/wcag_2_1.json",
+            "notes": "Baseline for most tools. BIK BITV-Test v3.0 is based on this version."
+        },
+        "wcag_2_2": {
+            "version": "2.2",
+            "published": "2023-10-05",
+            "criteria_count": 87,
+            "new_criteria_vs_2_1": [
+                "2.4.11",
+                "2.4.12",
+                "2.4.13",
+                "2.5.7",
+                "2.5.8",
+                "3.2.6",
+                "3.3.7",
+                "3.3.8",
+                "3.3.9"
+            ],
+            "removed_criteria_vs_2_1": [
+                "4.1.1"
+            ],
+            "levels": [
+                "A",
+                "AA",
+                "AAA"
+            ],
+            "source_url": "https://www.w3.org/TR/WCAG22/",
+            "checklist_file": "checklists/wcag/wcag_2_2.json",
+            "notes": "Added 9 new criteria, removed 4.1.1 (Parsing). Not all tools cover the new criteria."
+        },
+        "bitv_3_0": {
+            "version": "3.0",
+            "base_standard": "WCAG 2.1 AA",
+            "pruefschritte_count": 98,
+            "source_url": "https://www.bitvtest.de/pruefverfahren/bitv-2-0-nach-eu-standard",
+            "checklist_file": "checklists/bitv/bitv_3_0.json",
+            "notes": "98 Prüfschritte, aufgebaut auf WCAG 2.1 AA. Enthält manuelle Prüfschritte."
+        }
+    },
+    "tool_wcag_coverage": {
+        "note": "Approximate WCAG 2.2 AA criteria coverage by each tool. Refined during comparator development.",
+        "lighthouse_13_3_0": {
+            "wcag_2_2_aa_criteria_covered": "~50 of 87",
+            "coverage_source": "core/audits/accessibility/ in GoogleChrome/lighthouse - each audit maps to an axe rule",
+            "gaps_notable": [
+                "2.4.11",
+                "2.4.12",
+                "2.5.7",
+                "2.5.8",
+                "3.3.7",
+                "3.3.8"
+            ]
+        },
+        "axe_core_4_11_4": {
+            "wcag_2_2_aa_criteria_covered": "~57 of 87",
+            "coverage_source": "lib/rules/*.json in dequelabs/axe-core - tags wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
+            "gaps_notable": [
+                "3.3.7",
+                "3.3.8",
+                "3.3.9",
+                "2.4.13"
+            ]
+        },
+        "ibm_checker_3_0_0": {
+            "wcag_2_2_aa_criteria_covered": "~60 of 87 (estimate)",
+            "coverage_source": "IBMa/equal-access rule-server archives — policies IBM_Accessibility",
+            "gaps_notable": [
+                "exact list requires verification against rule-server"
+            ]
+        }
+    },
+    "tools": {
+        "lighthouse": {
+            "tool_package": {
+                "name": "lighthouse",
+                "version": "13.3.0",
+                "source": "GoogleChrome/lighthouse package.json (main)"
+            },
+            "embedded_engine": {
+                "name": "axe-core",
+                "constraint": "^4.11.4",
+                "source": "GoogleChrome/lighthouse dependencies"
+            },
+            "runtime": {
+                "node": ">=22.19",
+                "python": null
+            },
+            "web_ui_or_report_surface": {
+                "type": "Lighthouse HTML report renderer",
+                "version_policy": "coupled-to-lighthouse-version"
+            },
+            "notes": [
+                "Lighthouse accessibility audits are powered by bundled axe-core.",
+                "Do not assume fixed axe patch version across all Lighthouse 13.x; resolve from lock file in CI."
+            ]
+        },
+        "axe_core": {
+            "tool_package": {
+                "name": "axe-core",
+                "version": "4.11.4",
+                "source": "dequelabs/axe-core package.json (develop)"
+            },
+            "embedded_engine": {
+                "name": "native axe-core",
+                "constraint": "exact-match"
+            },
+            "runtime": {
+                "node": ">=4 (package engines)",
+                "python": null
+            },
+            "web_ui_or_report_surface": {
+                "type": "consumer-dependent (browser extension / custom report)",
+                "version_policy": "not-fixed-by-axe-package"
+            },
+            "notes": [
+                "Repository build tooling currently checks newer Node for development workflows.",
+                "Runtime compatibility and build compatibility are different constraints."
+            ]
+        },
+        "ibm_equal_access_checker": {
+            "tool_package": {
+                "name": "accessibility-checker",
+                "version": "3.0.0",
+                "source": "IBMa/equal-access accessibility-checker/package.json (main-4.x)"
+            },
+            "embedded_engine": {
+                "name": "IBM ACE rule engine",
+                "constraint": "ruleArchive-based (date versioned)",
+                "source": "IBMa/equal-access rule-server archives"
+            },
+            "runtime": {
+                "node": ">=16",
+                "python": null
+            },
+            "web_ui_or_report_surface": {
+                "type": "React-based report tooling and browser extension surfaces",
+                "version_policy": "tool-version + ruleArchive coupling"
+            },
+            "notes": [
+                "Engine artifacts are served as dated archives (example: 2025.08.13).",
+                "Rule archive version must be recorded with each scan for reproducibility."
+            ]
+        }
+    },
+    "python_stack": {
+        "robotframework_accessibility_checker": {
+            "planned_version": "0.1.0a",
+            "python": ">=3.11",
+            "robotframework": ">=7.0,<8.0",
+            "robotframework_browser": ">=17.0,<18.0",
+            "notes": [
+                "Python constraints are project policy and need lock-step testing with Node-based tools.",
+                "Keep Python and Node compatibility matrix in one source of truth."
+            ]
+        }
+    },
+    "governance": {
+        "pinning_policy": {
+            "critical": [
+                "lighthouse major.minor pinned in pyproject optional extra",
+                "axe-core major.minor tracked via lighthouse and direct runner",
+                "ibm checker major pinned and ruleArchive pinned",
+                "wcag checklist version explicitly selected at scan time",
+                "bitv checklist version explicitly selected at scan time"
+            ],
+            "flexible": [
+                "robotframework minor range",
+                "robotframework-browser minor range"
+            ]
+        },
+        "required_scan_metadata": [
+            "tool_version",
+            "embedded_engine_version",
+            "node_version",
+            "python_version",
+            "browser_version",
+            "rule_archive_version",
+            "wcag_checklist_version_used",
+            "bitv_checklist_version_used"
+        ],
+        "report_types": [
+            {
+                "type": "per_tool_report",
+                "description": "Results of a specific tool (axe/LH/IBM) in its native structure",
+                "formats": [
+                    "html",
+                    "json"
+                ]
+            },
+            {
+                "type": "standards_compliance_report",
+                "description": "Main report: each WCAG/BITV criterion + status per tool + gap analysis",
+                "statuses": [
+                    "FAIL",
+                    "PASS",
+                    "PARTIAL",
+                    "MANUAL",
+                    "N/A"
+                ],
+                "formats": [
+                    "html",
+                    "json"
+                ]
+            }
+        ]
+    },
+    "standards_mapping_strategy": {
+        "wcag_mapping": {
+            "strategy": "tag-based (automated via axe-core rule tags)",
+            "method": "Each axe-core rule has tags like wcag111, wcag143, wcag22aa. Lighthouse and IBM inherit via explicit mapping.",
+            "data_sources": [
+                "dequelabs/axe-core/doc/rule-descriptions.md (axe rule tags)",
+                "GoogleChrome/lighthouse/core/audits/accessibility/ (LH audits reference axe rules)",
+                "IBMa/equal-access/accessibility-checker-engine/src/v4/rules/ (IBM rules have WCAG_X_X_X metadata)"
+            ],
+            "automatable": true,
+            "effort": "low (parsing structured metadata)"
+        },
+        "bitv_mapping": {
+            "strategy": "embedding-based semantic matching + manual curation (hybrid)",
+            "method_automated": {
+                "name": "Embedding-based candidate generation",
+                "tool": "sentence-transformers (multilingual distiluse model)",
+                "process": [
+                    "1. Generate embeddings for all BITV Prüfschritte descriptions (German)",
+                    "2. Generate embeddings for all axe-core rule descriptions (English)",
+                    "3. Calculate cosine similarity between each pair",
+                    "4. Recommend top-3 candidate matches per Prüfschritt with confidence score",
+                    "5. Output: config/bitv/bitv_axe_mapping_candidates.json (for human review)"
+                ],
+                "confidence_thresholds": {
+                    "high_confidence": "similarity_score > 0.85 (likely correct, minimal review needed)",
+                    "medium_confidence": "0.70-0.85 (needs human verification)",
+                    "low_confidence": "< 0.70 (requires manual research)"
+                },
+                "script": "scripts/bootstrap_standards_data.py"
+            },
+            "method_curation": {
+                "name": "Human review and finalization",
+                "process": [
+                    "1. Curator opens config/bitv/bitv_axe_mapping_candidates.json",
+                    "2. For each Prüfschritt, reviews top-3 suggestions and confidence scores",
+                    "3. Confirms correct match OR performs manual research if score is low",
+                    "4. Adds notes explaining decision (especially for edge cases)",
+                    "5. Creates final config/bitv/bitv_axe_mapping.json with verified mappings"
+                ]
+            },
+            "advantages": [
+                "Much faster than fully manual: embeddings narrow search space to top-3",
+                "Multilingual: handles German descriptions with English rule descriptions",
+                "Traceable: every decision is documented with score and curator notes",
+                "Reproducible: same embedding model gives same candidates (versioned)"
+            ],
+            "limitations": [
+                "Embedding quality depends on model choice and training data",
+                "Some Prüfschritte may not have equivalent in any tool (MANUAL_ONLY)",
+                "Requires domain expertise to verify edge cases",
+                "Model must support German language"
+            ],
+            "maintenance": [
+                "When BITV updates: re-run embeddings generator, curator reviews new candidates",
+                "When axe-core updates: re-run embeddings generator, curator checks if mappings still valid",
+                "When embedding model updates: regenerate all candidates (backwards compat check needed)"
+            ]
+        }
+    }
+}
