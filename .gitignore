@@ -1,3 +1,6 @@
 # Local Copilot notes/prompts
 .copilot-local/
 .github/agents/
+
+# Python
+__pycache__/

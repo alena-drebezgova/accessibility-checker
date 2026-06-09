@@ -1,11 +1,12 @@
 {
   "schema_version": "1.0",
   "mapping_id": "bitv_axe_mapping_candidates",
-  "bitv_version": "3.0",
+  "bitv_version": "2.0",
+  "bitv_profile": "bitv_2_0_web",
   "status": "seed",
   "generated_by": "scripts/bootstrap_standards_data.py",
   "candidates": {
-    "1.1.1a": [
+    "9.1.1.1a": [
       {
         "rule": "image-alt",
         "similarity_score": 0.92
@@ -33,7 +34,7 @@
         "similarity_score": 0.71
       }
     ],
-    "3.2.5c": [
+    "9.2.4.7": [
       {
         "rule": null,
         "similarity_score": 0.0,

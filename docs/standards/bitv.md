@@ -15,7 +15,7 @@ The project treats BITV as a profile that references EN 301 549 and WCAG 2.1 cri
 
 ## Checklist files
 
-- `checklists/bitv/bitv_20_web.json`
+- `checklists/bitv/bitv_2_0_web.json`
 
 Each BITV checklist entry should contain:
 

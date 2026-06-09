@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "status": "seed",
-  "generated_at": "2026-06-05T16:57:14.237703+00:00",
+  "generated_at": "2026-06-09T14:06:35.835380+00:00",
   "tool_versions": {
     "axe_core": "4.11.4",
     "lighthouse": "13.3.0",
@@ -53,8 +53,8 @@
         "status": "PARTIAL"
       }
     },
-    "bitv_3_0": {
-      "1.1.1a": {
+    "bitv_2_0_web": {
+      "9.1.1.1a": {
         "covered_by": [
           "axe",
           "lighthouse",
@@ -68,7 +68,7 @@
           "ibm"
         ]
       },
-      "3.2.5c": {
+      "9.2.4.7": {
         "covered_by": [],
         "status": "MANUAL_ONLY"
       }

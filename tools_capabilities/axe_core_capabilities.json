@@ -1,0 +1,1370 @@
+{
+  "schema_version": "1.0",
+  "tool": "axe-core",
+  "tool_version": "4.12.0",
+  "status": "generated",
+  "source": {
+    "type": "static_capabilities",
+    "collected_from": "github",
+    "repository": "dequelabs/axe-core",
+    "branch": "develop",
+    "updated_at": "2026-06-09T14:07:17.692809+00:00"
+  },
+  "capabilities": {
+    "rules": {
+      "area-alt": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [
+          "9.1.1.1a"
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.2.4.4",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.2"
+        ],
+        "notes": []
+      },
+      "aria-allowed-attr": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-braille-equivalent": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ],
+        "notes": []
+      },
+      "aria-command-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "notes": []
+      },
+      "aria-conditional-attr": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-deprecated-role": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-hidden-body": {
+        "wcag": [
+          "1.3.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-10.8.1"
+        ],
+        "notes": []
+      },
+      "aria-hidden-focus": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-10.8.1"
+        ],
+        "notes": []
+      },
+      "aria-input-field-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "notes": []
+      },
+      "aria-meter-name": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag111",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "notes": []
+      },
+      "aria-progressbar-name": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag111",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "notes": []
+      },
+      "aria-prohibited-attr": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-required-attr": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-required-children": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "notes": []
+      },
+      "aria-required-parent": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "notes": []
+      },
+      "aria-roledescription": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "deprecated"
+        ],
+        "notes": []
+      },
+      "aria-roles": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-tab-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-toggle-field-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-tooltip-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ],
+        "notes": []
+      },
+      "aria-valid-attr": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "aria-valid-attr-value": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "audio-caption": {
+        "wcag": [
+          "1.2.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag121",
+          "EN-301-549",
+          "EN-9.1.2.1",
+          "section508",
+          "section508.22.a",
+          "deprecated"
+        ],
+        "notes": []
+      },
+      "autocomplete-valid": {
+        "wcag": [
+          "1.3.5"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.forms",
+          "wcag21aa",
+          "wcag135",
+          "EN-301-549",
+          "EN-9.1.3.5",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.13.1"
+        ],
+        "notes": []
+      },
+      "avoid-inline-spacing": {
+        "wcag": [
+          "1.4.12"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag21aa",
+          "wcag1412",
+          "EN-301-549",
+          "EN-9.1.4.12",
+          "ACT"
+        ],
+        "notes": []
+      },
+      "blink": {
+        "wcag": [
+          "2.2.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag222",
+          "section508",
+          "section508.22.j",
+          "TTv5",
+          "TT2.b",
+          "EN-301-549",
+          "EN-9.2.2.2",
+          "RGAAv4",
+          "RGAA-13.8.1"
+        ],
+        "notes": []
+      },
+      "button-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "notes": []
+      },
+      "bypass": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag241",
+          "section508",
+          "section508.22.o",
+          "TTv5",
+          "TT9.a",
+          "EN-301-549",
+          "EN-9.2.4.1",
+          "RGAAv4",
+          "RGAA-12.7.1"
+        ],
+        "notes": []
+      },
+      "color-contrast": {
+        "wcag": [
+          "1.4.3"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "notes": []
+      },
+      "color-contrast-enhanced": {
+        "wcag": [
+          "1.4.6"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.color",
+          "wcag2aaa",
+          "wcag146",
+          "ACT"
+        ],
+        "notes": []
+      },
+      "css-orientation-lock": {
+        "wcag": [
+          "1.3.4"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag134",
+          "wcag21aa",
+          "EN-301-549",
+          "EN-9.1.3.4",
+          "RGAAv4",
+          "RGAA-13.9.1",
+          "experimental"
+        ],
+        "notes": []
+      },
+      "definition-list": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.3"
+        ],
+        "notes": []
+      },
+      "dlitem": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.3"
+        ],
+        "notes": []
+      },
+      "document-title": {
+        "wcag": [
+          "2.4.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242",
+          "TTv5",
+          "TT12.a",
+          "EN-301-549",
+          "EN-9.2.4.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-8.5.1"
+        ],
+        "notes": []
+      },
+      "duplicate-id": {
+        "wcag": [
+          "4.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a-obsolete",
+          "wcag411",
+          "deprecated"
+        ],
+        "notes": []
+      },
+      "duplicate-id-active": {
+        "wcag": [
+          "4.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a-obsolete",
+          "wcag411",
+          "deprecated"
+        ],
+        "notes": []
+      },
+      "duplicate-id-aria": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-8.2.1"
+        ],
+        "notes": []
+      },
+      "form-field-multiple-labels": {
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.3.3.2",
+          "RGAAv4",
+          "RGAA-11.2.1"
+        ],
+        "notes": []
+      },
+      "frame-focusable-content": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag211",
+          "TTv5",
+          "TT4.a",
+          "EN-301-549",
+          "EN-9.2.1.1",
+          "RGAAv4",
+          "RGAA-7.3.2"
+        ],
+        "notes": []
+      },
+      "frame-title": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.i",
+          "TTv5",
+          "TT12.d",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-2.1.1"
+        ],
+        "notes": []
+      },
+      "frame-title-unique": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT12.d",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-2.2.1"
+        ],
+        "notes": []
+      },
+      "heading-order": {
+        "wcag": [],
+        "bitv": [
+          "9.1.3.1a"
+        ],
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "notes": []
+      },
+      "html-has-lang": {
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "TTv5",
+          "TT11.a",
+          "EN-301-549",
+          "EN-9.3.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-8.3.1"
+        ],
+        "notes": []
+      },
+      "html-lang-valid": {
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "TTv5",
+          "TT11.a",
+          "EN-301-549",
+          "EN-9.3.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-8.4.1"
+        ],
+        "notes": []
+      },
+      "html-xml-lang-mismatch": {
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311",
+          "EN-301-549",
+          "EN-9.3.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-8.3.1"
+        ],
+        "notes": []
+      },
+      "identical-links-same-purpose": {
+        "wcag": [
+          "2.4.9"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.semantics",
+          "wcag2aaa",
+          "wcag249"
+        ],
+        "notes": []
+      },
+      "image-alt": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [
+          "9.1.1.1a"
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT7.a",
+          "TT7.b",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.1"
+        ],
+        "notes": []
+      },
+      "input-button-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "notes": []
+      },
+      "input-image-alt": {
+        "wcag": [
+          "1.1.1",
+          "4.1.2"
+        ],
+        "bitv": [
+          "9.1.1.1a"
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT7.a",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.3"
+        ],
+        "notes": []
+      },
+      "label": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "notes": []
+      },
+      "label-content-name-mismatch": {
+        "wcag": [
+          "2.5.3"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.semantics",
+          "wcag21a",
+          "wcag253",
+          "EN-301-549",
+          "EN-9.2.5.3",
+          "RGAAv4",
+          "RGAA-6.1.5",
+          "experimental"
+        ],
+        "notes": []
+      },
+      "link-in-text-block": {
+        "wcag": [
+          "1.4.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "notes": []
+      },
+      "link-name": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.2.4.4",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-6.2.1"
+        ],
+        "notes": []
+      },
+      "list": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "notes": []
+      },
+      "listitem": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "notes": []
+      },
+      "marquee": {
+        "wcag": [
+          "2.2.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag222",
+          "TTv5",
+          "TT2.b",
+          "EN-301-549",
+          "EN-9.2.2.2",
+          "RGAAv4",
+          "RGAA-13.8.1"
+        ],
+        "notes": []
+      },
+      "meta-refresh": {
+        "wcag": [
+          "2.2.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag221",
+          "TTv5",
+          "TT8.a",
+          "EN-301-549",
+          "EN-9.2.2.1",
+          "RGAAv4",
+          "RGAA-13.1.2"
+        ],
+        "notes": []
+      },
+      "meta-refresh-no-exceptions": {
+        "wcag": [
+          "2.2.4",
+          "3.2.5"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2aaa",
+          "wcag224",
+          "wcag325"
+        ],
+        "notes": []
+      },
+      "meta-viewport": {
+        "wcag": [
+          "1.4.4"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag2aa",
+          "wcag144",
+          "EN-301-549",
+          "EN-9.1.4.4",
+          "ACT",
+          "RGAAv4",
+          "RGAA-10.4.2"
+        ],
+        "notes": []
+      },
+      "nested-interactive": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag412",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "notes": []
+      },
+      "no-autoplay-audio": {
+        "wcag": [
+          "1.4.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.time-and-media",
+          "wcag2a",
+          "wcag142",
+          "TTv5",
+          "TT2.a",
+          "EN-301-549",
+          "EN-9.1.4.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-4.10.1"
+        ],
+        "notes": []
+      },
+      "object-alt": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "RGAAv4",
+          "RGAA-1.1.6"
+        ],
+        "notes": []
+      },
+      "p-as-heading": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.semantics",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.1.3",
+          "experimental"
+        ],
+        "notes": []
+      },
+      "role-img-alt": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT7.a",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.1"
+        ],
+        "notes": []
+      },
+      "scrollable-region-focusable": {
+        "wcag": [
+          "2.1.1",
+          "2.1.3"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.keyboard",
+          "wcag2a",
+          "wcag211",
+          "wcag213",
+          "TTv5",
+          "TT4.a",
+          "EN-301-549",
+          "EN-9.2.1.1",
+          "EN-9.2.1.3",
+          "RGAAv4",
+          "RGAA-7.3.2"
+        ],
+        "notes": []
+      },
+      "select-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "notes": []
+      },
+      "server-side-image-map": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag211",
+          "section508",
+          "section508.22.f",
+          "TTv5",
+          "TT4.a",
+          "EN-301-549",
+          "EN-9.2.1.1",
+          "RGAAv4",
+          "RGAA-1.1.4"
+        ],
+        "notes": []
+      },
+      "summary-name": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ],
+        "notes": []
+      },
+      "svg-img-alt": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT7.a",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.5"
+        ],
+        "notes": []
+      },
+      "table-fake-caption": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.tables",
+          "experimental",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-5.4.1"
+        ],
+        "notes": []
+      },
+      "target-size": {
+        "wcag": [
+          "2.5.8"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag22aa",
+          "wcag258"
+        ],
+        "notes": []
+      },
+      "td-has-header": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.tables",
+          "experimental",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "TTv5",
+          "TT14.b",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-5.7.4"
+        ],
+        "notes": []
+      },
+      "td-headers-attr": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "TTv5",
+          "TT14.b",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-5.7.4"
+        ],
+        "notes": []
+      },
+      "th-has-data-cells": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.tables",
+          "wcag2a",
+          "wcag131",
+          "section508",
+          "section508.22.g",
+          "TTv5",
+          "TT14.b",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-5.7.1"
+        ],
+        "notes": []
+      },
+      "valid-lang": {
+        "wcag": [
+          "3.1.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.language",
+          "wcag2aa",
+          "wcag312",
+          "TTv5",
+          "TT11.b",
+          "EN-301-549",
+          "EN-9.3.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-8.8.1"
+        ],
+        "notes": []
+      },
+      "video-caption": {
+        "wcag": [
+          "1.2.2"
+        ],
+        "bitv": [],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag122",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT17.a",
+          "EN-301-549",
+          "EN-9.1.2.2",
+          "RGAAv4",
+          "RGAA-4.3.1"
+        ],
+        "notes": []
+      }
+    }
+  }
+}

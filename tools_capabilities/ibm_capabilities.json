@@ -1,0 +1,1357 @@
+{
+  "schema_version": "1.0",
+  "tool": "ibm_equal_access_checker",
+  "tool_version": "3.0.0",
+  "status": "generated",
+  "source": {
+    "type": "static_capabilities",
+    "collected_from": "github",
+    "repository": "IBMa/equal-access",
+    "branch": "main",
+    "updated_at": "2026-06-09T14:07:58.957109+00:00"
+  },
+  "capabilities": {
+    "rules": {
+      "a_target_warning": {
+        "wcag": [
+          "2.4.4",
+          "3.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "a_text_purpose": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "applet_alt_exists": {
+        "wcag": [
+          "1.1.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "application_content_accessible": {
+        "wcag": [
+          "1.1.1",
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "area_alt_exists": {
+        "wcag": [
+          "1.1.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_accessiblename_exists": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_activedescendant_tabindex_valid": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_activedescendant_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_application_label_unique": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_application_labelled": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_article_label_unique": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_allowed": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_conflict": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_exists": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_redundant": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_required": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_attribute_value_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_banner_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_banner_single": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_child_tabbable": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_child_valid": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_complementary_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_complementary_label_visible": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_complementary_labelled": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_content_in_landmark": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_contentinfo_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_contentinfo_misuse": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_contentinfo_single": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_descendant_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_document_label_unique": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_eventhandler_role_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_form_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_hidden_nontabbable": {
+        "wcag": [
+          "1.3.1",
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_id_unique": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_keyboard_handler_exists": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_landmark_name_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_main_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_main_label_visible": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_navigation_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_parent_required": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_region_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_region_labelled": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_role_allowed": {
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_role_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_search_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_toolbar_label_unique": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "aria_widget_labelled": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "asciiart_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "blink_css_review": {
+        "wcag": [
+          "2.2.2",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "blink_elem_deprecated": {
+        "wcag": [
+          "2.2.2",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "blockquote_cite_exists": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "canvas_content_described": {
+        "wcag": [
+          "1.1.1",
+          "2.1.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "caption_track_exists": {
+        "wcag": [
+          "1.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_active_descendant": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_autocomplete_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_design_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_focusable_elements": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_haspopup_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "combobox_popup_reference": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "dir_attribute_valid": {
+        "wcag": [
+          "1.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "download_keyboard_controllable": {
+        "wcag": [
+          "2.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "draggable_alternative_exists": {
+        "wcag": [
+          "2.5.7"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_accesskey_labelled": {
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_mouseevent_keyboard": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_orientation_unlocked": {
+        "wcag": [
+          "1.3.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_scrollable_tabbable": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_tabbable_role_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_tabbable_unobscured": {
+        "wcag": [
+          "2.4.11"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "element_tabbable_visible": {
+        "wcag": [
+          "2.4.7"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "embed_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "emoticons_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "error_message_exists": {
+        "wcag": [
+          "3.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "fieldset_label_valid": {
+        "wcag": [
+          "1.3.1",
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "fieldset_legend_valid": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "figure_label_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "form_font_color": {
+        "wcag": [
+          "1.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "form_interaction_review": {
+        "wcag": [
+          "3.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "form_label_unique": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "form_submit_button_exists": {
+        "wcag": [
+          "3.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "form_submit_review": {
+        "wcag": [
+          "3.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "frame_src_valid": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "frame_title_exists": {
+        "wcag": [
+          "2.4.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "heading_content_exists": {
+        "wcag": [
+          "2.4.6"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "heading_markup_misuse": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [
+          "9.1.3.1a"
+        ],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "html_lang_exists": {
+        "wcag": [
+          "2.4.4",
+          "3.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "html_lang_valid": {
+        "wcag": [
+          "3.1.1",
+          "3.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "html_skipnav_exists": {
+        "wcag": [
+          "2.4.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "iframe_interactive_tabbable": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "imagebutton_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "imagemap_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_background": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_decorative": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_misuse": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_null": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_redundant": {
+        "wcag": [
+          "1.1.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_alt_valid": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_ismap_misuse": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "img_longdesc_misuse": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_autocomplete_valid": {
+        "wcag": [
+          "1.3.5"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_checkboxes_grouped": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_fields_grouped": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_haspopup_conflict": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_label_after": {
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_label_before": {
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_label_exists": {
+        "wcag": [
+          "1.1.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_label_visible": {
+        "wcag": [
+          "2.5.3",
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_onchange_review": {
+        "wcag": [
+          "3.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "input_placeholder_label_visible": {
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "label_content_exists": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "label_name_visible": {
+        "wcag": [
+          "2.5.3"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "label_ref_valid": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "list_children_valid": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "list_markup_review": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "list_structure_proper": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "marquee_elem_avoid": {
+        "wcag": [
+          "2.2.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_alt_brief": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_alt_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_audio_transcribed": {
+        "wcag": [
+          "1.2.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_autostart_controllable": {
+        "wcag": [
+          "1.4.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_keyboard_controllable": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_live_captioned": {
+        "wcag": [
+          "1.2.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "media_track_available": {
+        "wcag": [
+          "1.2.3",
+          "1.2.5"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "meta_redirect_optional": {
+        "wcag": [
+          "2.2.4",
+          "3.2.5"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "meta_refresh_delay": {
+        "wcag": [
+          "2.2.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "meta_viewport_zoomable": {
+        "wcag": [
+          "1.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "noembed_content_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "object_text_exists": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "page_title_exists": {
+        "wcag": [
+          "2.4.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "page_title_valid": {
+        "wcag": [
+          "2.4.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "script_focus_blur_review": {
+        "wcag": [
+          "2.1.1",
+          "2.4.7",
+          "3.2.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "script_onclick_avoid": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "script_onclick_misuse": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "script_select_review": {
+        "wcag": [
+          "3.2.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "select_options_grouped": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "skip_main_described": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "skip_main_exists": {
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_background_decorative": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_before_after_review": {
+        "wcag": [
+          "1.3.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_color_misuse": {
+        "wcag": [
+          "1.4.1",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_focus_visible": {
+        "wcag": [
+          "2.4.4",
+          "2.4.7"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_highcontrast_visible": {
+        "wcag": [
+          "1.1.1",
+          "1.3.2",
+          "1.4.11"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_hover_persistent": {
+        "wcag": [
+          "1.4.13"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "style_viewport_resizable": {
+        "wcag": [
+          "1.4.10",
+          "1.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "svg_graphics_labelled": {
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_aria_descendants": {
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_caption_empty": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_caption_nested": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_headers_exists": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_headers_ref_valid": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_headers_related": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_layout_linearized": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_scope_valid": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_structure_misuse": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "table_summary_redundant": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "target_spacing_sufficient": {
+        "wcag": [
+          "2.5.8"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_block_heading": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_contrast_sufficient": {
+        "wcag": [
+          "1.4.3",
+          "2.4.4"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_quoted_correctly": {
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_sensory_misuse": {
+        "wcag": [
+          "1.3.3"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_spacing_valid": {
+        "wcag": [
+          "1.4.12"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "text_whitespace_valid": {
+        "wcag": [
+          "1.3.2"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "widget_tabbable_exists": {
+        "wcag": [
+          "2.1.1"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      },
+      "widget_tabbable_single": {
+        "wcag": [
+          "2.1.1",
+          "2.4.3"
+        ],
+        "bitv": [],
+        "policy": "IBM_Accessibility",
+        "notes": []
+      }
+    }
+  }
+}

@@ -6,8 +6,8 @@ The script runs in two explicit stages:
 2. Normalize that raw data into the canonical checklist JSON used by the project.
 
 Default outputs:
-- checklists/bitv/raw/bitv_20_web.json
-- checklists/bitv/bitv_20_web.json
+- checklists/bitv/raw/bitv_2_0_web.json
+- checklists/bitv/bitv_2_0_web.json
 """
 
 from __future__ import annotations
@@ -27,8 +27,8 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE_URL = "https://bitvtest.de/pruefverfahren/bitv-20-web"
-DEFAULT_RAW_OUTPUT = ROOT / "checklists/bitv/raw/bitv_20_web.json"
-DEFAULT_NORMALIZED_OUTPUT = ROOT / "checklists/bitv/bitv_20_web.json"
+DEFAULT_RAW_OUTPUT = ROOT / "checklists/bitv/raw/bitv_2_0_web.json"
+DEFAULT_NORMALIZED_OUTPUT = ROOT / "checklists/bitv/bitv_2_0_web.json"
 BITV_VERSION = "2.0"
 BITV_LOCALE = "de"
 BITV_PROFILE = "BIK BITV-Test / EN 301 549 (Web)"
@@ -37,6 +37,18 @@ WCAG_REFERENCE = "2.1"
 
 SECTION_RE = re.compile(r"^(?P<section_id>\d+(?:\.\d+)*)(?:\s+(?P<section_title>.+))?$")
 STEP_RE = re.compile(r"^(?P<step_id>\d+(?:\.\d+)*[a-z]?)\s+(?P<title>.+)$", re.IGNORECASE)
+
+
+def transliterate_german(value: str) -> str:
+    return (
+        value.replace("Ä", "Ae")
+        .replace("Ö", "Oe")
+        .replace("Ü", "Ue")
+        .replace("ä", "ae")
+        .replace("ö", "oe")
+        .replace("ü", "ue")
+        .replace("ß", "ss")
+    )
 
 
 class BitvChecklistParser(HTMLParser):
@@ -84,7 +96,7 @@ class BitvChecklistParser(HTMLParser):
 
     @staticmethod
     def _normalize_text(value: str) -> str:
-        return " ".join(unescape(value).split())
+        return transliterate_german(" ".join(unescape(value).split()))
 
     def _update_section_from_heading(self, heading_text: str) -> None:
         match = SECTION_RE.match(heading_text)
@@ -123,18 +135,18 @@ class BitvChecklistParser(HTMLParser):
 
 
 class BitvStepDetailParser(HTMLParser):
-    """Extract selected textual blocks from a single Prüfschritt page."""
+    """Extract selected textual blocks from a single Pruefschritt page."""
 
     TARGET_BLOCKS = {
-        "was wird gepruft?": "description",
+        "was wird geprueft?": "description",
         "beschreibung": "description",
-        "einordnung des prufschritts": "classification",
+        "einordnung des pruefschritts": "classification",
     }
 
     STOP_MARKERS = {
         "Nach oben springen",
         "Kontakt",
-        "Erklarung zur Barrierefreiheit",
+        "Erklaerung zur Barrierefreiheit",
         "Datenschutz",
         "Impressum",
         "Linkedin",
@@ -208,13 +220,12 @@ class BitvStepDetailParser(HTMLParser):
 
     @staticmethod
     def _normalize_text(value: str) -> str:
-        return " ".join(unescape(value).split())
+        return transliterate_german(" ".join(unescape(value).split()))
 
     @staticmethod
     def _normalize_label(value: str) -> str:
-        text = " ".join(unescape(value).split()).lower()
-        text = text.replace("ü", "u").replace("ö", "o").replace("ä", "a").replace("ß", "ss")
-        return text
+        text = transliterate_german(" ".join(unescape(value).split()))
+        return text.lower()
 
     def as_payload(self) -> dict[str, str]:
         def cleaned(block: list[str]) -> str:
@@ -334,7 +345,7 @@ def normalize_payload(raw_payload: dict[str, Any]) -> dict[str, Any]:
 
     return {
         "schema_version": "1.0",
-        "checklist_id": "bitv_20_web",
+        "checklist_id": "bitv_2_0_web",
         "profile": BITV_PROFILE,
         "version": BITV_VERSION,
         "references": {
@@ -387,7 +398,7 @@ def main() -> None:
     write_json(raw_output, raw_payload)
     write_json(normalized_output, normalized_payload)
 
-    print(f"Fetched {raw_payload['total_pruefschritte']} BITV Prüfschritte")
+    print(f"Fetched {raw_payload['total_pruefschritte']} BITV Pruefschritte")
     print(f"Raw data written to: {raw_output}")
     print(f"Normalized data written to: {normalized_output}")
 

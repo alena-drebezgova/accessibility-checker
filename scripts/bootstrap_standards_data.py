@@ -4,12 +4,11 @@
 This script creates structured artifact folders for scale:
 - checklists/wcag/
 - checklists/bitv/
-- config/bitv/
-- coverage/tools/
+- coverage/mappings/
 - coverage/standards/
 
-It also writes compatibility mirror files in legacy flat paths to avoid
-breaking existing references while the repository transitions.
+For BITV data, this script uses the official-source fetch+normalize pipeline
+from scripts/fetch_bitv_checklist.py.
 """
 
 from __future__ import annotations
@@ -17,6 +16,13 @@ from __future__ import annotations
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+
+from fetch_bitv_checklist import DEFAULT_SOURCE_URL, build_raw_payload, normalize_payload
+from fetch_wcag_checklist import (
+    VERSION_CONFIG as WCAG_VERSION_CONFIG,
+    build_raw_payload as build_wcag_raw_payload,
+    normalize_payload as normalize_wcag_payload,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -105,44 +111,15 @@ def wcag_22_payload() -> dict:
     }
 
 
-def bitv_30_payload() -> dict:
-    return {
-        "schema_version": "1.0",
-        "checklist_id": "bitv_3_0",
-        "version": "3.0",
-        "base_standard": "WCAG 2.1 AA",
-        "status": "seed",
-        "pruefschritte": [
-            {
-                "id": "1.1.1a",
-                "title": "Nicht-Text-Inhalte",
-                "wcag_equivalent": "1.1.1",
-                "manual_only": False,
-            },
-            {
-                "id": "9.1.3.1a",
-                "title": "HTML-Strukturelemente fuer Ueberschriften",
-                "wcag_equivalent": "1.3.1",
-                "manual_only": False,
-            },
-            {
-                "id": "3.2.5c",
-                "title": "Change on Request",
-                "wcag_equivalent": "3.2.5",
-                "manual_only": True,
-            },
-        ],
-    }
-
-
 def bitv_mapping_payload() -> dict:
     return {
         "schema_version": "1.0",
         "mapping_id": "bitv_axe_mapping",
-        "bitv_version": "3.0",
+        "bitv_version": "2.0",
+        "bitv_profile": "bitv_2_0_web",
         "status": "seed",
         "mappings": {
-            "1.1.1a": {
+            "9.1.1.1a": {
                 "mapped_to": {
                     "axe_rules": ["image-alt", "input-image-alt", "area-alt"],
                     "lighthouse_audits": ["image-alt"],
@@ -158,9 +135,9 @@ def bitv_mapping_payload() -> dict:
                 },
                 "wcag_equivalent": "1.3.1",
             },
-            "3.2.5c": {
+            "9.2.4.7": {
                 "mapped_to": {"axe_rules": [], "lighthouse_audits": [], "ibm_rules": []},
-                "wcag_equivalent": "3.2.5",
+                "wcag_equivalent": "2.4.7",
                 "status": "MANUAL_ONLY",
             },
         },
@@ -171,11 +148,12 @@ def bitv_candidates_payload() -> dict:
     return {
         "schema_version": "1.0",
         "mapping_id": "bitv_axe_mapping_candidates",
-        "bitv_version": "3.0",
+        "bitv_version": "2.0",
+        "bitv_profile": "bitv_2_0_web",
         "status": "seed",
         "generated_by": "scripts/bootstrap_standards_data.py",
         "candidates": {
-            "1.1.1a": [
+            "9.1.1.1a": [
                 {"rule": "image-alt", "similarity_score": 0.92},
                 {"rule": "input-image-alt", "similarity_score": 0.88},
                 {"rule": "area-alt", "similarity_score": 0.83},
@@ -185,7 +163,7 @@ def bitv_candidates_payload() -> dict:
                 {"rule": "list", "similarity_score": 0.73},
                 {"rule": "listitem", "similarity_score": 0.71},
             ],
-            "3.2.5c": [
+            "9.2.4.7": [
                 {"rule": None, "similarity_score": 0.0, "note": "Likely MANUAL_ONLY"}
             ],
         },
@@ -235,10 +213,11 @@ def ibm_coverage_payload() -> dict:
 def bitv_coverage_payload() -> dict:
     return {
         "schema_version": "1.0",
-        "standard": "bitv_3_0",
+        "standard": "bitv_2_0_web",
+        "version": "2.0",
         "status": "seed",
         "pruefschritte": {
-            "1.1.1a": {
+            "9.1.1.1a": {
                 "axe_rules": ["image-alt", "input-image-alt", "area-alt"],
                 "lighthouse_audits": ["image-alt"],
                 "ibm_rules": ["RPT_Img_UsemapAlt"],
@@ -250,11 +229,11 @@ def bitv_coverage_payload() -> dict:
                 "ibm_rules": ["heading_markup_misuse"],
                 "wcag_equivalent": "1.3.1",
             },
-            "3.2.5c": {
+            "9.2.4.7": {
                 "axe_rules": [],
                 "lighthouse_audits": [],
                 "ibm_rules": [],
-                "wcag_equivalent": "3.2.5",
+                "wcag_equivalent": "2.4.7",
                 "status": "MANUAL_ONLY",
             },
         },
@@ -293,10 +272,10 @@ def coverage_map_payload() -> dict:
                     "status": "PARTIAL",
                 },
             },
-            "bitv_3_0": {
-                "1.1.1a": {"covered_by": ["axe", "lighthouse", "ibm"]},
+            "bitv_2_0_web": {
+                "9.1.1.1a": {"covered_by": ["axe", "lighthouse", "ibm"]},
                 "9.1.3.1a": {"covered_by": ["axe", "lighthouse", "ibm"]},
-                "3.2.5c": {"covered_by": [], "status": "MANUAL_ONLY"},
+                "9.2.4.7": {"covered_by": [], "status": "MANUAL_ONLY"},
             },
         },
     }
@@ -307,40 +286,50 @@ def checklists_manifest_payload() -> dict:
         "schema_version": "1.0",
         "latest": {
             "wcag": "2.2",
-            "bitv": "3.0",
+            "bitv": "2_0",
         },
         "paths": {
             "wcag_2_1": "checklists/wcag/wcag_2_1.json",
             "wcag_2_2": "checklists/wcag/wcag_2_2.json",
-            "bitv_3_0": "checklists/bitv/bitv_3_0.json",
+            "bitv_2_0_web": "checklists/bitv/bitv_2_0_web.json",
         },
     }
 
 
 def main() -> None:
-    wcag21 = wcag_21_payload()
-    wcag22 = wcag_22_payload()
-    bitv30 = bitv_30_payload()
+    wcag21_raw = build_wcag_raw_payload("2.1", WCAG_VERSION_CONFIG["2.1"]["source_url"])
+    wcag22_raw = build_wcag_raw_payload("2.2", WCAG_VERSION_CONFIG["2.2"]["source_url"])
+    wcag21 = normalize_wcag_payload(
+        wcag21_raw,
+        checklist_id=WCAG_VERSION_CONFIG["2.1"]["checklist_id"],
+        published=WCAG_VERSION_CONFIG["2.1"]["published"],
+    )
+    wcag21_ids = {item["id"] for item in wcag21_raw["criteria"]}
+    wcag22 = normalize_wcag_payload(
+        wcag22_raw,
+        checklist_id=WCAG_VERSION_CONFIG["2.2"]["checklist_id"],
+        published=WCAG_VERSION_CONFIG["2.2"]["published"],
+        reference_ids_21=wcag21_ids,
+    )
+    bitv_raw = build_raw_payload(DEFAULT_SOURCE_URL)
+    bitv20 = normalize_payload(bitv_raw)
     bitv_mapping = bitv_mapping_payload()
     bitv_candidates = bitv_candidates_payload()
-    axe_cov = axe_coverage_payload()
-    lh_cov = lighthouse_coverage_payload()
-    ibm_cov = ibm_coverage_payload()
     bitv_cov = bitv_coverage_payload()
     cov_map = coverage_map_payload()
 
     # Structured paths (preferred)
+    write_json(ROOT / "checklists/wcag/raw/wcag_2_1.json", wcag21_raw)
+    write_json(ROOT / "checklists/wcag/raw/wcag_2_2.json", wcag22_raw)
     write_json(ROOT / "checklists/wcag/wcag_2_1.json", wcag21)
     write_json(ROOT / "checklists/wcag/wcag_2_2.json", wcag22)
-    write_json(ROOT / "checklists/bitv/bitv_3_0.json", bitv30)
+    write_json(ROOT / "checklists/bitv/raw/bitv_2_0_web.json", bitv_raw)
+    write_json(ROOT / "checklists/bitv/bitv_2_0_web.json", bitv20)
     write_json(ROOT / "checklists/manifest.json", checklists_manifest_payload())
 
-    write_json(ROOT / "config/bitv/bitv_axe_mapping.json", bitv_mapping)
-    write_json(ROOT / "config/bitv/bitv_axe_mapping_candidates.json", bitv_candidates)
+    write_json(ROOT / "coverage/mappings/bitv_axe_mapping.json", bitv_mapping)
+    write_json(ROOT / "coverage/mappings/bitv_axe_mapping_candidates.json", bitv_candidates)
 
-    write_json(ROOT / "coverage/tools/axe_core_coverage.json", axe_cov)
-    write_json(ROOT / "coverage/tools/lighthouse_coverage.json", lh_cov)
-    write_json(ROOT / "coverage/tools/ibm_coverage.json", ibm_cov)
     write_json(ROOT / "coverage/standards/bitv_coverage.json", bitv_cov)
     write_json(ROOT / "coverage/coverage_map.json", cov_map)
 

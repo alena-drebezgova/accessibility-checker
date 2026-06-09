@@ -11,7 +11,6 @@ The library should not fetch standards and mapping data from external sites at r
 ## What Bootstrap Produces
 
 - checklist files for WCAG and BITV
-- tool coverage datasets for axe-core, Lighthouse, and IBM Equal Access
 - BITV candidate mappings and curated final mappings
 - merged coverage maps used by the comparator
 
@@ -28,15 +27,16 @@ Each output file has a specific job in the pipeline:
 
 - `checklists/wcag/wcag_2_1.json`: versioned WCAG 2.1 checklist data with criterion IDs, levels, titles, and metadata used by the comparator.
 - `checklists/wcag/wcag_2_2.json`: versioned WCAG 2.2 checklist data, including the newer criteria that do not exist in WCAG 2.1.
-- `checklists/bitv/raw/bitv_20_web.json`: raw structured extraction from the official BITV-Test page, grouped by section and preserving source metadata.
-- `checklists/bitv/bitv_3_0.json`: versioned BITV 3.0 checklist data with pruefschritte, German descriptions, WCAG links, and manual-only flags.
-- `coverage/tools/axe_core_coverage.json`: rule-to-criterion coverage data for axe-core, used to see which WCAG or BITV entries axe can actually support.
-- `coverage/tools/lighthouse_coverage.json`: audit-to-criterion coverage data for Lighthouse, including links back to the axe-derived rule model where available.
-- `coverage/tools/ibm_coverage.json`: coverage data for IBM Equal Access, including its WCAG metadata and rule identifiers.
+- `checklists/wcag/raw/wcag_2_1.json`: raw structured extraction from the official W3C WCAG 2.1 TR page.
+- `checklists/wcag/raw/wcag_2_2.json`: raw structured extraction from the official W3C WCAG 2.2 TR page.
+- `checklists/bitv/raw/bitv_2_0_web.json`: raw structured extraction from the official BITV-Test page, grouped by section and preserving source metadata.
+- `checklists/bitv/bitv_2_0_web.json`: versioned BITV 2.0 web checklist data with pruefschritte, German descriptions, EN 301 549 classification, and mapping status.
 - `coverage/standards/bitv_coverage.json`: BITV-specific coverage view that connects German pruefschritte to the tool rules and marks partial or manual cases.
 - `coverage/coverage_map.json`: the merged coverage matrix that the comparator reads at runtime to decide PASS, FAIL, PARTIAL, or MANUAL.
-- `config/bitv/bitv_axe_mapping_candidates.json`: generated candidate matches for BITV mapping, usually produced by embeddings and then reviewed by a human.
-- `config/bitv/bitv_axe_mapping.json`: the final curated BITV mapping file that the comparator trusts as the source of truth.
+- `coverage/mappings/bitv_axe_mapping_candidates.json`: generated candidate matches for BITV mapping, usually produced by embeddings and then reviewed by a human.
+- `coverage/mappings/bitv_axe_mapping.json`: the final curated BITV mapping file that the comparator trusts as the source of truth.
+
+Static tool capability snapshots are generated separately into `tools_capabilities/`.
 
 The project keeps the outputs structured so the comparator reads canonical paths directly instead of reconstructing data from live network calls.
 

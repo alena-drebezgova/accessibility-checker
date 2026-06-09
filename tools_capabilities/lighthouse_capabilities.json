@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.0",
+  "tool": "lighthouse",
+  "tool_version": "13.3.0",
+  "status": "generated",
+  "source": {
+    "type": "static_capabilities",
+    "collected_from": "github",
+    "repository": "GoogleChrome/lighthouse",
+    "branch": "main",
+    "updated_at": "2026-06-09T14:07:31.257295+00:00"
+  },
+  "capabilities": {
+    "audits": {
+      "accesskeys": {
+        "axe_rule": "accesskeys",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-allowed-attr": {
+        "axe_rule": "aria-allowed-attr",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-allowed-role": {
+        "axe_rule": "aria-allowed-role",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-command-name": {
+        "axe_rule": "aria-command-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-conditional-attr": {
+        "axe_rule": "aria-conditional-attr",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-deprecated-role": {
+        "axe_rule": "aria-deprecated-role",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-dialog-name": {
+        "axe_rule": "aria-dialog-name",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-hidden-body": {
+        "axe_rule": "aria-hidden-body",
+        "wcag": [
+          "1.3.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-hidden-focus": {
+        "axe_rule": "aria-hidden-focus",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-input-field-name": {
+        "axe_rule": "aria-input-field-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-meter-name": {
+        "axe_rule": "aria-meter-name",
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-progressbar-name": {
+        "axe_rule": "aria-progressbar-name",
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-prohibited-attr": {
+        "axe_rule": "aria-prohibited-attr",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-required-attr": {
+        "axe_rule": "aria-required-attr",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-required-children": {
+        "axe_rule": "aria-required-children",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-required-parent": {
+        "axe_rule": "aria-required-parent",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-roles": {
+        "axe_rule": "aria-roles",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-text": {
+        "axe_rule": "aria-text",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-toggle-field-name": {
+        "axe_rule": "aria-toggle-field-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-tooltip-name": {
+        "axe_rule": "aria-tooltip-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-treeitem-name": {
+        "axe_rule": "aria-treeitem-name",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-valid-attr": {
+        "axe_rule": "aria-valid-attr",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "aria-valid-attr-value": {
+        "axe_rule": "aria-valid-attr-value",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "autocomplete-valid": {
+        "axe_rule": "autocomplete-valid",
+        "wcag": [
+          "1.3.5"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "button-name": {
+        "axe_rule": "button-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "bypass": {
+        "axe_rule": "bypass",
+        "wcag": [
+          "2.4.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "color-contrast": {
+        "axe_rule": "color-contrast",
+        "wcag": [
+          "1.4.3"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "definition-list": {
+        "axe_rule": "definition-list",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "dlitem": {
+        "axe_rule": "dlitem",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "document-title": {
+        "axe_rule": "document-title",
+        "wcag": [
+          "2.4.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "duplicate-id-aria": {
+        "axe_rule": "duplicate-id-aria",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "empty-heading": {
+        "axe_rule": "empty-heading",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "form-field-multiple-labels": {
+        "axe_rule": "form-field-multiple-labels",
+        "wcag": [
+          "3.3.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "frame-title": {
+        "axe_rule": "frame-title",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "heading-order": {
+        "axe_rule": "heading-order",
+        "wcag": [],
+        "bitv": [
+          "9.1.3.1a"
+        ],
+        "notes": []
+      },
+      "html-has-lang": {
+        "axe_rule": "html-has-lang",
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "html-lang-valid": {
+        "axe_rule": "html-lang-valid",
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "html-xml-lang-mismatch": {
+        "axe_rule": "html-xml-lang-mismatch",
+        "wcag": [
+          "3.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "identical-links-same-purpose": {
+        "axe_rule": "identical-links-same-purpose",
+        "wcag": [
+          "2.4.9"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "image-alt": {
+        "axe_rule": "image-alt",
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [
+          "9.1.1.1a"
+        ],
+        "notes": []
+      },
+      "image-redundant-alt": {
+        "axe_rule": "image-redundant-alt",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "input-button-name": {
+        "axe_rule": "input-button-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "input-image-alt": {
+        "axe_rule": "input-image-alt",
+        "wcag": [
+          "1.1.1",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "label": {
+        "axe_rule": "label",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "label-content-name-mismatch": {
+        "axe_rule": "label-content-name-mismatch",
+        "wcag": [
+          "2.5.3"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "landmark-one-main": {
+        "axe_rule": "landmark-one-main",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "link-in-text-block": {
+        "axe_rule": "link-in-text-block",
+        "wcag": [
+          "1.4.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "link-name": {
+        "axe_rule": "link-name",
+        "wcag": [
+          "2.4.4",
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "list": {
+        "axe_rule": "list",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "listitem": {
+        "axe_rule": "listitem",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "meta-refresh": {
+        "axe_rule": "meta-refresh",
+        "wcag": [
+          "2.2.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "meta-viewport": {
+        "axe_rule": "meta-viewport",
+        "wcag": [
+          "1.4.4"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "object-alt": {
+        "axe_rule": "object-alt",
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "presentation-role-conflict": {
+        "axe_rule": "presentation-role-conflict",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "select-name": {
+        "axe_rule": "select-name",
+        "wcag": [
+          "4.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "skip-link": {
+        "axe_rule": "skip-link",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "svg-img-alt": {
+        "axe_rule": "svg-img-alt",
+        "wcag": [
+          "1.1.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "tabindex": {
+        "axe_rule": "tabindex",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "table-duplicate-name": {
+        "axe_rule": "table-duplicate-name",
+        "wcag": [],
+        "bitv": [],
+        "notes": []
+      },
+      "table-fake-caption": {
+        "axe_rule": "table-fake-caption",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "target-size": {
+        "axe_rule": "target-size",
+        "wcag": [
+          "2.5.8"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "td-has-header": {
+        "axe_rule": "td-has-header",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "td-headers-attr": {
+        "axe_rule": "td-headers-attr",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "th-has-data-cells": {
+        "axe_rule": "th-has-data-cells",
+        "wcag": [
+          "1.3.1"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "valid-lang": {
+        "axe_rule": "valid-lang",
+        "wcag": [
+          "3.1.2"
+        ],
+        "bitv": [],
+        "notes": []
+      },
+      "video-caption": {
+        "axe_rule": "video-caption",
+        "wcag": [
+          "1.2.2"
+        ],
+        "bitv": [],
+        "notes": []
+      }
+    }
+  }
+}
