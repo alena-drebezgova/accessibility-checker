@@ -36,5 +36,8 @@ jobs:
 
       - name: Show HTML in summary
         run: |
-          echo "### Preview" >> $GITHUB_STEP_SUMMARY
-          echo "<iframe src='data:text/html;base64,$(base64 -w 0 pages/log.html)'></iframe>" >> $GITHUB_STEP_SUMMARY
+          echo "### Robot Log (raw HTML)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "<pre>" >> $GITHUB_STEP_SUMMARY
+          cat results/log.html >> $GITHUB_STEP_SUMMARY
+          echo "</pre>" >> $GITHUB_STEP_SUMMARY
