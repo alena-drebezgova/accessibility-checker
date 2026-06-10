@@ -43,22 +43,7 @@ jobs:
           name: result
           path: results
 
-      - uses: actions/upload-pages-artifact@v5
-        with:
-          path: pages
-
-  deploy:
-    needs: robot
-    outputs:
-      page_url: ${{ steps.deployment.outputs.page_url }}
-      log_url: ${{ steps.urls.outputs.log_url }}
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}/log.html
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/deploy-pages@v5
-        id: deployment
+      - name: Show HTML in summary
+        run: |
+          echo "### Preview" >> $GITHUB_STEP_SUMMARY
+          echo "<iframe src='data:text/html;base64,$(base64 -w 0 pages/log.html)'></iframe>" >> $GITHUB_STEP_SUMMARY
